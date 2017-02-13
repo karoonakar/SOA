@@ -1,0 +1,12 @@
+---
+server:
+  port: 8001
+  
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/karoonakar/Spring-cloud-${ENV_TYPE}
+          search-paths: config-client
+          
